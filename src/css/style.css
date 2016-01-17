@@ -1,0 +1,317 @@
+/* The font that is used for the title of the website */
+@font-face {
+	font-family: 'comfortaa_bold';
+	src: url('../fonts/comfortaa_bold.ttf');
+}
+
+
+
+
+
+/* ######################### Some generic elements ######################### */
+/* For better viewing of all the posts */
+p {
+	text-align: justify;
+}
+
+
+/* The pattern in the background */
+body {
+	background-image: url(../img/fifty.gif);
+}
+
+
+
+
+
+/* ######################### The navigation bar ######################### */
+/* The navbar itself, in order to stick the page to it but with a little shadow effect */
+.navbar {
+	padding-top: 10px;
+	margin-bottom: 0px;
+	-webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:	0px 0px 7px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:			0px 0px 7px 0px rgba(50, 50, 50, 0.75);
+}
+
+
+/* The name of the website */
+.navbar-brand {
+	padding-left: 30px;
+	font-family: comfortaa_bold;
+	color: white !important;
+	font-size: 40px;
+	height: 60px;
+}
+
+
+/* The items in the menu can breathe with this */
+.navbar_header {
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+
+/* In order to display correctly the items of the navbar
+!important is used here to avoid the bootstrap style to be used */
+.navbar-nav li a {
+	color: rgb(226, 226, 226) !important;
+	margin-bottom: -1px !important;
+}
+
+
+/* Same here */
+.navbar-nav li a:hover {
+	color: white !important;
+	background-color: #428bca !important;
+	border-radius: 6px 6px 0px 0px;
+	-webkit-box-shadow: inset 0px 10px 12px 0px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:	inset 0px 10px 12px 0px rgba(50, 50, 50, 0.3);
+	box-shadow:			inset 0px 10px 12px 0px rgba(50, 50, 50, 0.3);
+}
+
+
+/* The search bar in the navbar */
+#navbar_search_form {
+	margin-right: 10px;
+}
+
+
+
+
+
+/* ######################### The content of the page ######################### */
+/* The bloc where all the page under the navigation bar is contained */
+#content {
+	min-height: 768px;
+	background-color: white;
+	padding-top: 20px;
+	padding-right: 25px;
+	padding-left: 25px;
+	-webkit-box-shadow: 0px 0px 8px 0px grey;
+	-moz-box-shadow:	0px 0px 8px 0px grey;
+	box-shadow:			0px 0px 8px 0px grey;
+}
+
+
+/* Display "Category: [category]" when a category is selected */
+.page_title {
+	margin-bottom: 15px;
+	border-bottom: dashed #428bca 2px;
+}
+
+
+/* Put the category in blue color */
+.page_title strong {
+	color: #428bca;
+}
+
+
+
+
+
+/* ######################### The posts ######################### */
+/* When displaying multiple posts, put each of them into a box  */
+.box {
+	border-radius: 6px;
+	border: solid grey 1px;
+	margin-bottom: 25px;
+	min-height: 310px;  /* For the post-thumbnails to be displayed correctly with tablet screen */
+}
+
+
+/* The informations about the post (author, dates and number of comments) */
+.page-header small {
+	color: grey;
+}
+
+
+/* The header image is displayed at the left of its associated post */
+#header_image_div {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+/* Post thumbnails when there are multiple posts displayed */
+.post_thumbnail {
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+
+/* The picture associated to a post if there's one */ 
+.post_img {
+	clear: both;
+	display: block;
+}
+
+
+
+
+
+
+/* ######################### The right widget sidebar ######################### */
+/* The content of each box of the right widget sidebar */
+.panel-body ul {
+	padding-left: 10px;
+	list-style: none;
+}
+
+
+/* Put a "- " instead of those horrible list points */
+.panel-body ul li:before {
+	content: "- ";
+}
+
+
+
+
+
+/* ######################### The footer ######################### */
+/* The footer (it has colophon as default id so i let it) */
+#colophon {
+	display: block;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+
+/* The menu of the footer */
+#footer_menu {
+	display: inline-block;
+}
+
+
+/* Display the items of the footer menu in line and with no list-style */
+#footer_menu li {
+	list-style: none;
+	display: inline-block;
+}
+
+
+
+
+
+/* ######################### The 404 error page ######################### */
+/* The text is centered into the page */
+#error {
+	text-align: center;
+	color: white;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	right: 25%;
+}
+
+
+/* Same for the search bar under it */
+#error .input-group {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+/* ######################### The comment form and comments ######################### */
+/* The comment section, with the comment form and the list of all the comments */
+#comment-section {
+	border-top: dashed 2px #428bca;
+	padding-top: 15px;
+}
+
+
+/* To display the captcha block aligned with the other inputs
+Used only if you use the WP_Captcha plugin */
+.cptch_block {
+	text-align: center;
+}
+
+
+/* The informations about the uses of the email of a commenter or which tags he can use */
+#comment_info {
+	background-color: #5bc0de;
+	padding: 5px;
+	border-radius: 6px;
+	color: white;
+	font-weight: 700;
+	text-align: center;
+}
+
+
+/* The comment submit button */
+#comment-submit {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #5cb85c;
+	color: white;
+	border: 1px solid #4cae4c;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	padding: 6px 12px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+/* The blog of the avatar */
+#comments .pull-left {
+	padding: 7px;
+}
+
+
+/* The avatar itself */
+#comments img {
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:	0px 0px 7px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:			0px 0px 7px 0px rgba(50, 50, 50, 0.75);
+}
+
+
+
+
+
+/* ######################### WordPress requires ######################### */
+/* Some css classes needed here but some are unused, sorry */
+.wp-caption {}
+.wp-caption-text {}
+.sticky {}
+.gallery-caption {}
+.bypostauthor {}
+.alignright {text-align: right;}
+.alignleft {text-align: left;}
+.aligncenter {text-align: center;}
+
+
+
+
+
+/* ######################### Plugins ######################### */
+/* For the wp_contact_form plugin to display the form bloc correctly */
+#contact_form {
+	display: block !important;
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+#cntctfrm_contact_form div {
+	text-align: center !important;
+}
+
+
+/* For the wp_contact_form plugin to display the form bloc correctly */
+#cntctfrm_contact_form p {
+	text-align: center !important;
+}

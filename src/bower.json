@@ -1,0 +1,11 @@
+{
+    "name": "napi-theme",
+    "description": "The theme for my WordPress based blog.",
+    "license": "GPL",
+    "version": "0.1.0",
+    "homepage": "http://www.napi.fr/",
+    "dependencies": {
+        "jquery": "latest",
+        "bootstrap": "latest"
+    }
+}
