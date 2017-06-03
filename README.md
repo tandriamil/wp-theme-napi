@@ -1,4 +1,5 @@
 wp-theme-napi
+=============
 A simple and quite responsive theme for my [WordPress](https://wordpress.org/)
 based blog.
 
