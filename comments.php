@@ -48,7 +48,7 @@
 					<div class="media-body">
 						<h4 class="media-heading">
 							<small>
-								<?php echo __('On the ', 'napi') . ' ' . get_comment_date('j F Y') . ' ' . __('at', 'napi') . ' ' . get_comment_date('H:i') . ', ' . get_comment_author() . ' ' . __('said', 'napi') . ' : '; ?> 
+								<?php echo __('On the ', 'napi') . ' ' . get_comment_date('j F Y') . ' ' . __('at', 'napi') . ' ' . get_comment_date('H:i') . ', ' . get_comment_author() . ' ' . __('said', 'napi') . ' : '; ?>
 								<?php edit_comment_link(__('Edit', 'napi')); ?>
 							</small>
 						</h4>

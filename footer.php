@@ -14,7 +14,7 @@
 			//Method to display it
 			wp_nav_menu($footer_menu_params);
 		?>
-    	<?php _e('Proudly powered by', 'napi'); ?> <a href="http://wordpress.org" target="_blank">Wordpress</a>  |  
+    	<?php _e('Proudly powered by', 'napi'); ?> <a href="http://wordpress.org" target="_blank">Wordpress</a>  |
     	<?php _e('Theme', 'napi'); ?>: <a href="http://www.napi.fr/wordpress-theme-napi" target="_blank">Napi</a>
     </div>
 </footer>

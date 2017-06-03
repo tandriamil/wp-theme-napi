@@ -8,7 +8,7 @@ if (is_array($links)) {
 
 	//Open the bloc
 	echo '<div style="text-align: center;" class="col-lg-10 col-lg-push-1 col-ls-pull-1"><ul class="pagination">';
-	
+
 	//Display each link
 	foreach ($links as $link) {
 		//If it's the current page (a s for span)
